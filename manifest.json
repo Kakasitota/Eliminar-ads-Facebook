@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Eliminar Anuncios en Facebook",
+    "version": "1.0",
+    "description": "Extensión para eliminar anuncios en Facebook",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "host_permissions": [
+      "https://www.facebook.com/",
+      "https://*.facebook.com/"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.facebook.com/*", "*://*.facebook.com/*"],
+        "js": ["popup.js"]
+      }
+    ],
+    "icons": {
+    }
+  }
+  
